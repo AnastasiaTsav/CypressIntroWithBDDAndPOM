@@ -1,0 +1,26 @@
+{
+    "baseUrl": "https://www.saucedemo.com/",
+    "integrationFolder": "cypress/integration/e2e",
+    "testFiles": "**/*.{feature,features}", 
+    "defaultCommandTimeout": 60000,
+    "pageLoadTimeout": 60000,
+    "execTimeout": 50000,
+    "requestTimeout": 10000,
+    "responseTimeout": 100000,
+    "retries": { "openMode": 0, "runMode": 2 },
+    "chromeWebSecurity": false,
+    "video": false,
+    "watchForFileChanges": false,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "charts": true,
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true, 
+            "overwrite": false,
+            "html": true,
+            "json": true
+        }
+    }
+}
